@@ -9,11 +9,6 @@ void push(stack_t **stack, unsigned int line_number)
 {
 	stack_t *new;
 
-	if (stack == NULL)
-	{
-		printf("L%d: invalid stack\n", line_number);
-		exit(EXIT_FAILURE);
-	}
 	new = malloc(sizeof(stack_t));
 	if (new == NULL)
 	{
