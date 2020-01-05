@@ -36,9 +36,8 @@ int main(int argc, char *argv[])
 		}
 		line_num++;
 	}
-	_freed(stack);
+	fclose(fd);
 	free(buff);
 	_free(&stack, line_num);
-	fclose(fd);
 	return (0);
 }
