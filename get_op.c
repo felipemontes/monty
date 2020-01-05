@@ -25,5 +25,6 @@ void get_op(char *token, stack_t **stack, unsigned int line)
 		}
 	}
 	printf("L%d: unknown instruction %s\n", line, token);
+	_free(stack, line);
 	exit(EXIT_FAILURE);
 }
