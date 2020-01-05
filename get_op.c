@@ -1,12 +1,13 @@
 #include "monty.h"
 /**
- *
- *
- *
+ * get_op - function that checks what operation needs to be done
+ * @token: first token of the file
+ * @stack: pointer to the stack
+ * @line: number of line
  */
 void get_op(char *token, stack_t **stack, unsigned int line)
 {
-        int i = 0;
+	int i = 0;
 
 	instruction_t op[] = {
 		{"push", push},

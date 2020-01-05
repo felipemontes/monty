@@ -1,8 +1,8 @@
 #include "monty.h"
 /**
- *
- *
- *
+ * isnum - checks if the string is a number
+ * @str: string
+ * Return: 0 or 1
  */
 int isnum(char *str)
 {
@@ -19,9 +19,10 @@ int isnum(char *str)
 	return (1);
 }
 /**
- *
- *
- *
+ * tokenize - divide the string into tokens
+ * @str: first token
+ * @stack: pointer to the function
+ * @line_num: line num
  */
 void tokenize(char *str, stack_t **stack, unsigned int line_num)
 {
