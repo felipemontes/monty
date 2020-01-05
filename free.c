@@ -13,8 +13,7 @@ void _free(stack_t **stack, unsigned int line_number)
 }
 /**
  * _freed - frees memory
- * @stack: pointer to the stack
- * @line_number: line number
+ * @head: pointer to the head of the list
  */
 void _freed(stack_t *head)
 {
