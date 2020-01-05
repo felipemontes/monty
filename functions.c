@@ -70,7 +70,7 @@ void pop(stack_t **stack, unsigned int line_number)
 	}
 }
 /**
- * pop - removes the top element of a stack
+ * pint - prints the top
  * @stack: pointer to the stack
  * @line_number: line number
  */
