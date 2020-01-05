@@ -28,9 +28,9 @@ void tokenize(char *str, stack_t **stack, unsigned int line_num)
 	char *token;
 	char *second;
 
-	if (str == NULL)
-		return;
 	token = strtok(str, " ");
+	if (token == NULL || *token == ' ')
+		return;
 	if (strcmp(token, "push") == 0)
 	{
 		second = token;
