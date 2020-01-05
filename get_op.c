@@ -12,6 +12,7 @@ void get_op(char *token, stack_t **stack, unsigned int line)
 	instruction_t op[] = {
 		{"push", push},
 		{"pall", pall},
+		{"pint", pint},
 		{NULL, NULL}
 	};
 
