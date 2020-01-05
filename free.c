@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * _free - frees memorie
+ * _free - frees memory
  * @stack: pointer to the stack
  * @line_number: line number
  */
@@ -11,7 +11,11 @@ void _free(stack_t **stack, unsigned int line_number)
 	while (*stack != NULL)
 		pop(stack, line_number);
 }
-
+/**
+ * _freed - frees memory
+ * @stack: pointer to the stack
+ * @line_number: line number
+ */
 void _freed(stack_t *head)
 {
 	if (head != NULL)
