@@ -11,3 +11,12 @@ void _free(stack_t **stack, unsigned int line_number)
 	while (*stack != NULL)
 		pop(stack, line_number);
 }
+
+void _freed(stack_t *head)
+{
+	if (head != NULL)
+	{
+		_freed(head->next);
+		free(head);
+	}
+}
