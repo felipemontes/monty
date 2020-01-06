@@ -15,6 +15,7 @@ void get_op(char *token, stack_t **stack, unsigned int line)
 		{"pint", pint},
 		{"pop", pop},
 		{"nop", nop},
+		{"add", add},
 		{NULL, NULL}
 	};
 
