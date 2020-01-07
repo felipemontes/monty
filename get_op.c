@@ -27,8 +27,8 @@ void get_op(char *token, stack_t **stack, unsigned int line)
 			return;
 		}
 	}
-	dprintf(STDERR_FILENO, "L%d: ", line_number);
-	dprintf(STDERR_FILENO, "unknown instruction %s\n", op_str);
+	dprintf(STDERR_FILENO, "L%d: ", line);
+	dprintf(STDERR_FILENO, "unknown instruction %s\n", token);
 	_free(stack, line);
 	exit(EXIT_FAILURE);
 }
